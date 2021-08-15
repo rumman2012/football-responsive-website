@@ -10,6 +10,7 @@ body
 {
     font-family: 'Poppins', sans-serif;
 }
+/*------------- top section style start------------- */
 .top-section
 {
 
@@ -57,12 +58,14 @@ body
 {
     padding: 8px;
 }
+/*------------- top section style end------------- */
 main
 {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+/* -------------player section style start------ */
 .top-players
 {
     /* width: 800px; */
@@ -72,7 +75,6 @@ main
 {
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    
 }
 .player
 {
@@ -93,10 +95,14 @@ main
     color: #6C6C6C;
    
 }
+/* -------------player section style end------ */
+
+/* ------------highlights section style start----- */
 .top-highlights
 {
     width:800px;
     padding: 100px 0;
+   
 }
 .highlights
 {
@@ -114,11 +120,12 @@ main
 {
 margin-bottom: 20px;
 }
+/* ------------highlights section style end----- */
+
+/* ---------------footer style start---------------- */
 .footer-div
 {
-   
    margin-bottom: 50px;
-  
 }
 .footer-info
 {
@@ -129,7 +136,6 @@ margin-bottom: 20px;
 .logo img
 {
   width:100%;
-
 }
 .social-icon
 {
@@ -137,7 +143,7 @@ margin-bottom: 20px;
     color: #969BAB; 
     text-align: center;
 }
-.ic 
+.icon-style
 {
     margin:7px;
 }
@@ -145,10 +151,11 @@ margin-bottom: 20px;
 {
     padding-top: 10px;
 }
+/* ---------------footer style end---------------- */
 
+/* ------------------media query for mobile device start-------------------- */
 @media only screen and (max-width:688px) 
 {
-  
     .container
     {
         flex-direction: column;
@@ -164,14 +171,11 @@ margin-bottom: 20px;
         margin-top: 20px;
         width:325px;
     }
-    
    .players
    {
        grid-template-columns: repeat(1,1fr);
        justify-items: center;
-       
    }
-  
    .top-highlights
    {
        width:100%;
@@ -188,6 +192,9 @@ margin-bottom: 20px;
    }
  
 } 
+/* ------------------media query for mobile device end-------------------- */
+
+/* ---------------------media query for table start------------------------ */
 @media only screen and (min-width:668px) and (max-width:992px)
 {
     .container
@@ -209,3 +216,4 @@ margin-bottom: 20px;
        align-items: center;
    }
 }
+/* ---------------------media query for table end------------------------ */
