@@ -58,7 +58,7 @@ main
 }
 .top-players
 {
-    width: 800px;
+    /* width: 800px; */
     padding-top: 30px;
 }
 .players
@@ -110,7 +110,7 @@ margin-bottom: 20px;
 .footer-div
 {
    
-    width:800px; 
+    /* width:800px;  */
 }
 .footer-info
 {
@@ -141,10 +141,7 @@ margin-bottom: 20px;
 
 @media only screen and (max-width:688px) 
 {
-    /* .top-section
-    {
-        width:100%;
-    } */
+  
     .container
     {
         flex-direction: column;
@@ -184,3 +181,24 @@ margin-bottom: 20px;
    }
  
 } 
+@media only screen and (min-width:668px) and (max-width:992px)
+{
+    .container
+    {
+        flex-direction: row;
+    
+      
+    }
+      .players
+   {
+       grid-template-columns: repeat(2,1fr);
+   }
+   .highlights
+   {
+       flex-direction: row;
+   }
+   .footer-div
+   {
+       align-items: center;
+   }
+}
