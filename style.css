@@ -10,13 +10,20 @@ body
 {
     font-family: 'Poppins', sans-serif;
 }
-
-.container
+.top-section
 {
+
     display: flex;
+    justify-content: center;
+}
+.container
+{   
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background:#2D25A0;  
     padding: 100px;
-    justify-content: space-around;
     /* flex-direction: column; */
 }
 .section-title
@@ -110,7 +117,8 @@ margin-bottom: 20px;
 .footer-div
 {
    
-    /* width:800px;  */
+   margin-bottom: 50px;
+  
 }
 .footer-info
 {
@@ -121,14 +129,13 @@ margin-bottom: 20px;
 .logo img
 {
   width:100%;
-  height: 110px;
-  margin:20px 0;
+
 }
 .social-icon
 {
     font-size: 14px;
     color: #969BAB; 
-    text-align: center;  
+    text-align: center;
 }
 .ic 
 {
@@ -157,15 +164,14 @@ margin-bottom: 20px;
         margin-top: 20px;
         width:325px;
     }
-    .top-players
-    {
-        width:100%;
-    }
+    
    .players
    {
        grid-template-columns: repeat(1,1fr);
+       justify-items: center;
        
    }
+  
    .top-highlights
    {
        width:100%;
@@ -173,10 +179,11 @@ margin-bottom: 20px;
    .highlights
    {
        flex-direction: column;
+       align-items: center;
    }
    .footer-div
    {
-       width:75%;
+      
        align-items: center;
    }
  
@@ -187,11 +194,11 @@ margin-bottom: 20px;
     {
         flex-direction: row;
     
-      
     }
-      .players
+    .players
    {
        grid-template-columns: repeat(2,1fr);
+       
    }
    .highlights
    {
